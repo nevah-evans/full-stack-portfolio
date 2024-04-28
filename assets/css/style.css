@@ -177,12 +177,19 @@ img:hover {
 
 
 
-@media screen and (max-width: 412px)  {
+@media screen and (max-width: 800px)  {
     main,
     nav{
         flex-direction: column;
     }
+    figure{
+        width: 100%;
+    }
     .info{
         flex-direction: column ;
+    }
+    .photo,
+    div.row{
+        flex-direction: column;
     }
 }
