@@ -182,4 +182,7 @@ img:hover {
     nav{
         flex-direction: column;
     }
+    .info{
+        flex-direction: column ;
+    }
 }
