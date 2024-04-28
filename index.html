@@ -1,49 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width-device-width, initail-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
         <title>Nevah Evans | Portfolio</title>
-        <link rel="stlyesheet" href=""/>
-        <link rel="stlyesheet" href=""/>
     </head>
 
     <body>
+
         <header>
             <nav>
-                <h1>Nevah Evans</h1>
-                <section class="navbar">
-                <ul>
-                    <li><a href=about-me>About Me</a></li>
-                    <li><a href="work" >Work</a></li>
-                    <li><a href="contact-me">Contact Me</a></li>
-                    <li><a href="resume">Resume</a></li>
-                </ul>
-                </section>
+            <div class="myname"></div>
+                <h1 id="name">Nevah Evans</h1>
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#projects" >Work</a></li>
+                        <li><a href="#contact-me">Contact Me</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
             </nav>
         </header>
-        <img src="" alt="">
+
+        <figure>
+            <p id="quote">This webpage has been brought to you by <em>redacted</em>mg of caffine and insomina. </p>
+        </figure>
+
         <main>
-            <section class="me">
-                <h2>About Me</h2>
-                <p> Hey there! My name is Nevah Evans. I'm currently a bootcamp student with a dream to make it to the end of the course with at least a little bit of sanity left and a new job!</p>
+            <section class="ami">
+            <h2 id="about-me">About Me</h2>
+                <p id="me"> Hello there! My name is Nevah Evans. I am a licensed physical therapist assistant, working in the home health setting. I am currently a bootcamp student learning full stack web develpement. I started with very little knowledge on how to code or how to even approach building a webpage. However, within this first month of the boot camp, I have learned so much thanks to my instructor and his TA's! I know there is so much more to learn but know my classmates and I will overcome the challenges ahead of us and see it through to the end! With the completion of this course I hope that I can come out with at least a <strong>little</strong> bit of sanity left and a new career!</p>
             </section>
-            <section class="projects">
-                <h2>Work</h2>
-                <img src="https://c.pxhere.com/photos/94/20/montana_sunset_dusk_sky_clouds_beautiful_colors_colorful-1178446.jpg!d" alt="scenic view of mountains and river" height="400px" width="600px">
-                <img src="https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="warm blurry lights on dark background" height="200px" width="300px">
-                <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/stock-photography-trends11.jpg" alt="elderly man with headphones dancing" height="200px" width="300px">
-                <img src="https://images.freeimages.com/images/large-previews/a88/colors-1055787.jpg" alt="wavey blues and greens" height="200px" width="300px">
-                <img src="https://media.istockphoto.com/photos/designer-at-work-picture-id641693656?k=6&m=641693656&s=612x612&w=0&h=qVw2VPqaD2bkD6U7H4eFP8w0AgAAwkO46OjnQ7wSHXA=" alt="design items on a desk with laptop" height="200px" width="300px">
+<br>
+            <h2 id="work"> Work</h2>
+            <section id="projects">
+                <section class= container>
+                    <article class=photo id="horiseon">
+                         <a href="https://nevah-evans.github.io/Horiseon-Accessibility-Update/"><img src="./assets/images/orange_blue_tech.webp" alt="orange light tech" height="400px" width="620px"></a>
+                        <h3>Horiseon</h3>
+                         <h4> HTML | CSS</h4>
+                    </article>
+                    <div class="row">  
+                    <article class="photo" id="comingsoon1">          
+                        <img src="./assets/images/yellow-abstract.avif" alt="yellow lines and dots" height="200px" width="300px">
+                        <h3>Coming Soon</h3>
+                    </article>
+                    <article class="photo" id="comingsoon2">
+                        <img src="./assets/images/orange-design.webp" alt="orange lines" height="200px" width="300px">
+                        <h3>Coming Soon</h3>
+                    </article>
+                        </div>
+
+                        <div class="row">  
+                    <article class="photo" id="comingsoon3">
+                        <img src="./assets/images/blue-green-waves.jpg" alt="wavey blues and greens" height="200px" width="300px">
+                        <h3>Coming Soon</h3>
+                    </article>
+                    <article class="photo" id="comingsoon4">
+                        <img src="./assets/images/blue-world.jpg" alt="blue cybernetic design" height="200px" width="300px">
+                        <h3>Coming Soon</h3>
+                    </article>
+                    </div>
+                </section>
             </section>
-            <section>
-                <h2>Contact Me</h2>
-                <a href="tel:9794129477">(979) 412-9477</a>
-                <a href="mailto:nevahevans@yahoo.com">E-mail</a>
-                <a href="https://github.com/dashboard">GitHub</a>
-                <a href="https://twitter.com/home">Twitter</a>
-                <a href="https://open.spotify.com/">Spotify</a>
-            </section>
+<br>
+            <h2 id="cm">Contact Me</h2>
+                <section id="contact-me">
+                    <div class="info">
+                        <a href="tel:9794129477">(979) 412-9477</a>
+                        <a href="mailto:nevahevans@yahoo.com">E-mail</a>
+                        <a href="https://github.com/dashboard">GitHub</a>
+                        <a href="https://twitter.com/home">Twitter</a>
+                        <a href="https://open.spotify.com/">Spotify</a>
+                    </div>
+                </section>
         </main>
 
     </body>
