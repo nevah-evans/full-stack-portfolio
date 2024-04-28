@@ -9,6 +9,7 @@
 }
 
 nav{ 
+    flex: auto;
     background-color: var(--dark-blue);
     display: flex;
     justify-content: space-between;
@@ -16,12 +17,19 @@ nav{
     padding: 20px;
 }
 
-figure{
-    background-image: url(/assets/images/abstract-blue-orange-top.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+div.myname{
+    background-color: var(--light-blue);
+    padding: 15px 20px;
+    position: absolute;
+    left:0px;
 }
+
+#name{
+    color: var(--orange);
+    font-size: 30px;
+    background-color:var(--light-blue);
+    padding: 0px 100px 0px 20px;
+    }
 
 li{
     display: inline;
@@ -37,9 +45,34 @@ li{
     
 }
 
-div.row{
-    display: flex;
-    flex-flow: row;
+li:hover{
+    background-color: var(--light-blue);
+    transition: 0.5s ease-in-out;
+}
+
+figure{
+    flex: auto;
+    background-image: url(/assets/images/abstract-blue-orange-top.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+#quote{
+    font-size: 25px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    background-color: var(--light-blue);
+    border: 10px solid var(--light-blue);
+
+}
+
+em{
+    background-color: var(--dark-blue);
+    color: white;
+    font-style: normal;
+    font-family: Courier;
 }
 
 h2{
@@ -49,18 +82,77 @@ h2{
     margin: 20px;
 }
 
-div.myname{
-    background-color: var(--light-blue);
-    padding: 15px 10px;
-    position: absolute;
-    left:0px;
+.ami{
+    display: flex;
+    justify-content: space-between;
 }
 
-em{
-    background-color: var(--dark-blue);
-    color: white;
-    font-style: normal;
-    font-family: Courier;
+#about-me{
+    margin: 10px 0px 90px 30px;
+}
+
+#me{
+    font-size: 22px;
+    display: block;
+    padding-left: 50px;
+    margin: 30px 150px 50px 0px;
+    border-left: 5px solid var(--dark-blue);
+}
+
+#work{
+    padding-right: 20px;
+    margin: 10px 0px 90px 30px;
+}
+
+.container{
+    display: flex;
+    flex-flow:wrap column;
+    align-items: center;
+    border-left: 5px solid var(--dark-blue);
+    margin-left: 40px;
+}
+
+.photo{
+    position: relative;
+    border: 5px solid var(--light-blue);
+    margin: 10px;
+img{
+    vertical-align: bottom;
+    opacity: 0.8;
+}
+}
+
+div.row{
+    display: flex;
+    flex-flow: row;
+}
+
+h3 {
+    color: var(--orange);
+    position: absolute;
+    bottom: 50px;
+    font-size: 20px;
+    background-color: var(--light-blue);
+    padding: 9.5px;
+}
+
+h4{
+    color: var(--orange);
+    position: absolute;
+    bottom: 30px;
+    background-color: var(--light-blue);
+    font-size: 15px;
+    padding: 5px 7px;
+
+}
+
+img:hover {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+#cm{
+    margin: 0px 0px 90px 30px;
 }
 
 .info {
@@ -78,11 +170,6 @@ em{
 }
 }
 
-li:hover{
-    background-color: var(--light-blue);
-    transition: 0.5s ease-in-out;
-}
-
 .info a:hover{
     background-color: var(--light-blue);
     transition: 0.5s ease-in;
@@ -90,88 +177,9 @@ li:hover{
 
 
 
-
-
-.container{
-    display: flex;
-    flex-flow:wrap column;
-    align-items: center;
-    border-left: 5px solid var(--dark-blue);
-    margin-left: 400px;
-}
-
-.photo{
-    position: relative;
-    border: 5px solid var(--light-blue);
-    margin: 10px;
-img{
-    vertical-align: bottom;
-}
-}
-
-img:hover {
-    opacity: 0.8;
-    transition: 0.5s ease;
-}
-
-h3 {
-    color: var(--orange);
-    position: absolute;
-    bottom: 50px;
-    font-size: 20px;
-    background-color: var(--light-blue);
-    padding: 10px;
-}
-
-h4{
-    color: var(--orange);
-    position: absolute;
-    bottom: 30px;
-    background-color: var(--light-blue);
-    font-size: 15px;
-    padding: 5px 7px;
-
-}
-
-#name{
-    color: var(--orange);
-    font-size: 30px;
-    background-color:var(--light-blue);
-    margin-left: 0px;
-}
-
-#quote{
-    font-size: 25px;
-    position: absolute;
-    right: 0px;
-    top: 220px;
-    background-color: var(--light-blue);
-    border: 10px solid var(--light-blue);
-
-}
-
-.ami{
-    display: flex;
-    justify-content: space-between;
-}
-#about-me{
-    border-right: 5px solid var(--dark-blue);
-    margin: 10px 0px 10px 300px;
-}
-#me{
-    font-size: 22px;
-    display: block;
-    padding-left: 50px;
-    margin: 30px 150px 50px 0px;
-}
-
-#cm{
-    padding-right: 90px;
-    margin: 0px 0px 90px 148px;
-    /* border-right: 5px solid var(--dark-blue); */
-}
-
-#work{
-    padding-right: 90px;
-    margin: 0px 70px 90px 148px;
+@media screen and (max-width: 412px)  {
+    main,
+    nav{
+        flex-direction: column;
+    }
 }
