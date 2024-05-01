@@ -50,12 +50,13 @@ li:hover{
     transition: 0.5s ease-in-out;
 }
 
-figure{
+#figure-img{
     flex: auto;
-    background-image: url(/assets/images/abstract-blue-orange-top.jpg);
+    /* background-image: url(/assets/images/abstract-blue-orange-top.jpg); */
     background-size: cover;
     background-position: center;
     height: 200px;
+    width: 100%;
 }
 
 #quote{
